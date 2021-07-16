@@ -1,0 +1,31 @@
+<table class ="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th> Nome </th>
+            <th > Email </th>
+            <th > Gênero </th>
+            <th > Editar </th>
+            <th > Remover </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {linha}
+        <tr>
+            <td>{name}</td>
+            <td>{email}</td>
+            <td>{gender}</td>
+            <td>
+                <button type ="button" class="btn btn-primary" onclick="window.location.href='?acao=Tabela&metodo=editar&id={id}';">
+                <i class ="fa fa-edit"></i>
+                </button>
+            </td>
+            <td>
+                <button type ="button "class ="btn btn-danger "onclick="if(confirm('Deseja apagar esse registro?'))window.location.href='?acao=Tabela&metodo=remover&id={id}';">
+                    <i class =" fa fa-trash "> </i>
+                </button>
+            </td>
+        </tr>
+        {/linha}
+    </tbody>
+</table>

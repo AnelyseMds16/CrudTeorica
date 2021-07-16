@@ -1,0 +1,23 @@
+<form action="?acao=Form&metodo=salvar" method="POST">
+    <input type="hidden" name="id" id="id" value="{id}">
+    <div class="form-group row">
+        <label for="name" class="col-3">Nome:</label>
+        <input type="text" name="name" id="name" value="{name}" class="form-control col-9" required>
+    </div >
+    <div class="form-group row">
+        <label for="email" class="col-3">E-mail:</label>
+        <input type="text" name="email" id="email" value="{email}" class="form-control col-9" required>
+    </div>
+    <h4>Gênero:</h4>
+    <div class="form-check row">
+        <input type="radio" class="form-check-input" name="gender" id="gener_m" value="Masculino">
+        <label for="gener_m">Masculino</label>
+    </div>
+    <div class="form-check disabled row">
+        <input type="radio" class="form-check-input" name="gender" id="gener_f" value="Feminino">
+        <label for="gener_f">Feminino</label>
+    </div>
+    <div class="form-group row">
+        <button class="btn btn-primary" type="submit" name="button" id ="button">Salvar</button>
+    </div >
+</form>
